@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Host Page</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        
+        <div>
+            <input placeholder="Create Room Id"
+                    type="text"
+                    id="username-input" /><br>
+            <button onclick="sendUsername()">Invite</button>
+            <button onclick="startCall()">Start Call</button>
+        </div>
+        <div id="video-call-div">
+            <video muted id="local-video" autoplay></video>
+            <video id="remote-video" autoplay></video>
+            <div class="call-action-div">
+                <button onclick="muteVideo()">Mute Video</button>
+                <button onclick="muteAudio()">Mute Audio</button>
+            </div>
+        </div>
+        <script src="./sender.js"></script>
+    </body>
+
+</html>
